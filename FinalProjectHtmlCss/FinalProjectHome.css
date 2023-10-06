@@ -1,0 +1,227 @@
+:root{
+    --font-family: font-family: 'ABeeZee', sans-serif;
+    --font-family: font-family: 'Merienda', cursive;
+}
+
+header{
+    background-color: rgba(255,255,255,1);
+    z-index: 4;
+    position: relative;
+}
+
+.navbar-nav .menu-part{
+    min-width: 65px;
+    height: 100px;
+    display: flex;
+}
+
+.collapse{
+    justify-content: space-between;
+}
+
+.navbar{
+    padding: 0px !important;
+}
+
+.container-fluid{
+    padding: 0px !important;
+}
+
+.navbar-nav a {
+    text-decoration: none;
+    color: black;
+    font-family:'Merienda', cursive;
+    font-size: 18px;
+    padding:20px 15px !important;
+    font-weight: 900;
+    letter-spacing:1;
+  }
+.navbar-nav a:hover {
+    text-decoration: none;
+    color:black; 
+  }
+
+  .active{
+    color: #5fcac7 !important;
+  }
+
+  .box {
+    background-image: url(./images/518280108.jpg);
+    width: 100%;
+    height: 674px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    --mask:
+    radial-gradient(23.85px at 50% 33.00px,#000 99%,#0000 101%) calc(50% - 40px) 0/80px 51% repeat-x,
+    radial-gradient(23.85px at 50% -13px,#0000 99%,#000 101%) 50% 20px/80px calc(51% - 20px) repeat-x,
+    radial-gradient(23.85px at 50% calc(100% - 33.00px),#000 99%,#0000 101%) calc(50% - 40px) 100%/80px 51% repeat-x,
+    radial-gradient(23.85px at 50% calc(100% + 13.00px),#0000 99%,#000 101%) 50% calc(100% - 20px)/80px calc(51% - 20px) repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+  }
+
+  header .brand-area{
+    display: flex;
+    justify-content: center;
+  }
+  
+  header .brand-area img{
+    max-width: 185px !important;
+    max-height: 185px !important;
+    position: absolute;
+  }
+
+  .box img{
+    max-width: 517px !important;
+    max-height: 517px !important;
+    top: 50px;
+    right: 10px;
+  }
+
+  .welcome-area{
+    position: relative;
+  }
+
+  .welcome-area .welc-area-tittle{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+  }
+
+  .welcome-area .welc-area-tittle img{
+    max-width: 82.2px !important;
+    max-height: 39.45px !important;
+    position: absolute !important;
+    height: 100%;
+    width: 100%;
+    top: 30%;
+    right: 44%;
+  }
+  
+  .welcome-area .welc-area-tittle h1{
+    font-size: 47px !important;
+    color: #4b4342;
+    font-family: 'Leckerli One', cursive;
+    width: 262px;
+    height: 94px;
+    position: absolute;
+    top: 44%;
+    text-align: center;
+    margin: 0px;
+  }
+
+  .welcome-area .welc-area-tittle .p{
+    position: relative;
+    bottom: 130px;
+    width: 241.14px;
+    height: 38px;
+    text-align: center;
+  }
+
+  .welcome-area .welc-area-tittle p{
+    position: absolute;
+    font-size: 13px;
+    color: #4B4342;
+    font-family: 'ABeeZee', sans-serif;
+  }
+
+  .specialties-area{
+    background-image: url(./images/547147222.jpg);
+    max-width: 1522px;
+    height: 766.6px;
+    background-position: 50% -45px;
+  }
+
+  .cupcake-area{
+    width: 1200px;
+    height: 566.59px;
+    padding: 30px 15px 0px;
+    margin: auto;
+  }
+
+  .cupcake-area .logo-cupcake-area img{
+    width: 221px !important;
+    height: 41px;
+    padding: 0px 20px;
+    margin: 70px 474.5px 0px
+  }
+
+  .cupcake-area .tittle-cupcake-area h2{
+    font-family: 'Merienda', cursive;
+    font-size: 48px;
+    color: #4b4342;
+    max-width: 1170px !important;
+    height: 57.59px;
+    line-height: 1.2;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .cupcake-area .owl-cupcakes-area{
+    width: 1170px !important;
+    height: 373px !important;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cupcake-area .owl-cupcakes-area .owl-cupcakes-data{
+    max-width: 270px !important;
+    height: 309px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .cupcake-area .owl-cupcakes-area .shape {
+    position: relative;
+    width: 180px;
+    height: 180px;
+  }
+
+
+  .cupcake-area .owl-cupcakes-area .shape svg{
+    width: 180px;
+    height: 180px;
+    transition: 1s;
+  }
+
+  .cupcake-area .owl-cupcakes-area .shape svg:hover{
+    fill:#5fcac7 !important;
+  }
+
+  .cupcake-area .owl-cupcakes-area .shape .cake-img img{
+    width: 126px;
+    height: 126px;
+    position: absolute;
+    top:0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    margin: auto;
+  }
+
+  .cupcake-area .owl-cupcakes-area .owl-cupcake-tittle h3{
+    max-width: 270px !important;
+    height: 36px;
+    font-size: 30px;
+    font-family: 'Merienda', cursive;
+    margin: 0px 0px 10px;
+    color: #4b4342;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+
+  .cupcake-area .owl-cupcakes-area .owl-cupcake-text p{
+    max-width: 270px !important;
+    color: #4B4342;
+    font-size: 17px;
+    font-family: 'ABeeZee', sans-serif;
+    text-align: center;
+  }
