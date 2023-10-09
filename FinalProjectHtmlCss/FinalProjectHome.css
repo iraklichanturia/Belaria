@@ -9,10 +9,10 @@ header{
     position: relative;
 }
 
-.navbar-nav .menu-part{
-    min-width: 65px;
+.navbar-nav{
     height: 100px;
-    display: flex;
+    align-items: center;
+    
 }
 
 .collapse{
@@ -26,7 +26,10 @@ header{
 .container-fluid{
     padding: 0px !important;
 }
-
+.navbar .container-fluid .collapse .navbar-nav img{
+  position: relative;
+  top: 40px;
+}
 .navbar-nav a {
     text-decoration: none;
     color: black;
@@ -54,10 +57,8 @@ header{
     align-items: center;
     flex-direction: column;
     --mask:
-    radial-gradient(23.85px at 50% 33.00px,#000 99%,#0000 101%) calc(50% - 40px) 0/80px 51% repeat-x,
-    radial-gradient(23.85px at 50% -13px,#0000 99%,#000 101%) 50% 20px/80px calc(51% - 20px) repeat-x,
-    radial-gradient(23.85px at 50% calc(100% - 33.00px),#000 99%,#0000 101%) calc(50% - 40px) 100%/80px 51% repeat-x,
-    radial-gradient(23.85px at 50% calc(100% + 13.00px),#0000 99%,#000 101%) 50% calc(100% - 20px)/80px calc(51% - 20px) repeat-x;
+    radial-gradient(27.59px at 50% 39.00px,#000 99%,#0000 101%) calc(50% - 40px) 0/80px 100%,
+    radial-gradient(27.59px at 50% -19px,#0000 99%,#000 101%) 50% 20px/80px 100% repeat-x;
   -webkit-mask: var(--mask);
           mask: var(--mask);
   }
@@ -82,7 +83,9 @@ header{
 
   .welcome-area{
     position: relative;
-  }
+    top: -35px;
+    right: 25px;
+}
 
   .welcome-area .welc-area-tittle{
     flex-direction: column;
@@ -129,13 +132,33 @@ header{
     font-family: 'ABeeZee', sans-serif;
   }
 
-  .specialties-area{
-    background-image: url(./images/547147222.jpg);
-    max-width: 1522px;
-    height: 766.6px;
-    background-position: 50% -45px;
-  }
 
+.specialties-area{
+  position: relative;
+  max-width: 1522px;
+  height: 766.6px;
+  /* background-position: 50% -45px; */
+  --mask:
+  radial-gradient(27.59px at 50% 39.00px,#000 99%,#0000 101%) calc(50% - 40px) 0/80px 100%,
+  radial-gradient(27.59px at 50% -19px,#0000 99%,#000 101%) 50% 20px/80px 100% repeat-x;
+-webkit-mask: var(--mask);
+        mask: var(--mask);
+        margin-top: -30px;
+
+}
+
+.specialties-area::before {    
+  content: ' ';
+position: absolute;
+z-index: -1;
+inset: 0;
+opacity: .1;
+background-image: url(./images/547147222.jpg);
+background-size: cover;
+background-position: center;
+}
+
+  
   .cupcake-area{
     width: 1200px;
     height: 566.59px;
@@ -225,3 +248,208 @@ header{
     font-family: 'ABeeZee', sans-serif;
     text-align: center;
   }
+
+  .discover-area {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    /* background-image:url(./images/516360906.jpg); */
+    /* background-color:transparent #43B79CCC; */
+    background-color: #43B79ccc;
+    max-width: 1520px;
+    height: 720px;
+    margin-top: -10px;
+    --mask:
+    radial-gradient(6.10px at 50% 8.50px,#000 99%,#0000 101%) calc(50% - 10px) 0/20px 51% repeat-x,
+    radial-gradient(6.10px at 50% -3.5px,#0000 99%,#000 101%) 50% 5px/20px calc(51% - 5px) repeat-x,
+    radial-gradient(6.10px at 50% calc(100% - 8.50px),#000 99%,#0000 101%) calc(50% - 10px) 100%/20px 51% repeat-x,
+    radial-gradient(6.10px at 50% calc(100% + 3.50px),#0000 99%,#000 101%) 50% calc(100% - 5px)/20px calc(51% - 5px) repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+  }
+
+  .discover-area::before {    
+    content: ' ';
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  opacity: .1;
+  background-image: url(images/516360906.jpg);
+  background-size: cover;
+  background-position: center;
+  }
+
+  
+  .discover-area .discover-area-box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+  .discover-area .dis-logo-area .dis-shape{
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+  }
+
+
+
+  .discover-area .dis-logo-area .dis-shape .dis-img{
+    position: absolute;
+    top: 20px;
+  }
+
+  .discover-area .discover-area-box .dis-head-area h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Merienda', cursive;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+
+  .discover-area .discover-area-box .dis-p-area p{
+    color: #ffffff;
+    font-size: 17px;
+    font-family: 'ABeeZee', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .discover-area .dis-btn-area{
+    margin-top: 50px;
+  }
+
+  .creation-area .creations .articles-area{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .creation-area .creations .articles-area article > figure > picture > img{
+    width: 280px;
+    height: 280px;
+    border-radius: 10px !important;
+  }
+
+  .olala {
+    background-image: url(./images/674906526.jpg);
+    --mask:
+    radial-gradient(13.99px at 50% 19.20px,#000 99%,#0000 101%) calc(50% - 24px) 0/48px 51% repeat-x,
+    radial-gradient(13.99px at 50% -7.2px,#0000 99%,#000 101%) 50% 12px/48px calc(51% - 12px) repeat-x,
+    radial-gradient(13.99px at 50% calc(100% - 19.20px),#000 99%,#0000 101%) calc(50% - 24px) 100%/48px 51% repeat-x,
+    radial-gradient(13.99px at 50% calc(100% + 7.20px),#0000 99%,#000 101%) 50% calc(100% - 12px)/48px calc(51% - 12px) repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+  }
+
+  .know-us-better .us-svg svg{
+    width: 126.88px;
+    height: 126.88px;
+  }
+
+  .know-us-better .us-svg i{
+    position: absolute;
+    font-size: 50px;
+    color: #ffffff;
+  }
+
+  .bellaria-service-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .know-us-better .us-svg{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.olala a .btn{
+width: 270px;
+height: 50px;
+text-decoration: none !important;
+color: #4B4342;
+font-size: 26px;
+font-family: 'Merienda', cursive;
+display: flex;
+}
+
+.clients {
+  background-color:rgb(255,145,164)
+}
+
+.price-area{
+  max-width: 1200px;
+  height: 941.66px;
+  margin: 120px;
+}
+
+.price-area .article-donates{
+  width: 1300px;
+  height: 941.66px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+.price-area .article-donates .donate-card{
+  width: 300px;
+  height: 717.29px;
+  padding: 0px 15px;
+  border: 5px solid steelblue;
+  border-radius: 10px;
+}
+
+.donate-card{
+  position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.donate-card img{
+  position: absolute;
+  top: -80px;
+}
+
+.donate-card h4{
+  color: #4B4342;
+  font-size: 27.88px;
+  font-family: 'Merienda', cursive;
+  padding: 10px 15px 57.625px;
+}
+
+.donate-card h2{
+  font-size: 48px;
+  color: #4B4342;
+  font-family: 'Merienda', cursive;
+}
+
+.donate-card div{
+  background-color:#ff91a4;
+  margin: 20px 0px 0px;
+  padding: 0px 25px;
+  font-size: 14px;
+  font-family: 'ABeeZee', sans-serif;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.donate-card p{
+  width: 222px;
+  height: 50px;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'ABeeZee', sans-serif;
+  padding: 10px 0px;
+  color: #4B4342;
+}
+
+.donate-card hr{
+  width: 222px;
+  border: 1px solid steelblue;
+}

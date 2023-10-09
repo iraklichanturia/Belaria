@@ -1,0 +1,214 @@
+.contact-banner-area{
+    max-width: 1519.2px;
+    height: 340.2px;
+    display: flex;
+    justify-content: center;
+    background-image: url(./images/1920x400.jpg);
+    --mask:
+    radial-gradient(16.40px at 50% 23.00px,#000 99%,#0000 101%) calc(50% - 20px) 0/40px 51% repeat-x,
+    radial-gradient(16.40px at 50% -13px,#0000 99%,#000 101%) 50% 10px/40px calc(51% - 10px) repeat-x,
+    radial-gradient(16.40px at 50% calc(100% - 23.00px),#000 99%,#0000 101%) calc(50% - 20px) 100%/40px 51% repeat-x,
+    radial-gradient(16.40px at 50% calc(100% + 13.00px),#0000 99%,#000 101%) 50% calc(100% - 10px)/40px calc(51% - 10px) repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+}
+
+.contact-banner-area .contact-head{
+    width: 1170px !important;
+    height: 340.2px;
+    padding: 120px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-banner-area .contact-head h1{
+    font-size: 51px;
+    margin: 0px 0px 10px;
+    color: #ffffff;
+    font-family: 'Merienda', cursive;
+    font-weight: 600;
+}
+
+.contact-banner-area .contact-head .head-tittle-content .current, a{
+    font-size: 17px;
+    text-decoration: none;
+    font-family: 'ABeeZee', sans-serif;
+    color: #ffffff;
+}
+
+.contact-banner-area .contact-head .head-tittle-content i{
+    font-size: 17px;
+    text-decoration: none;
+    font-family: 'ABeeZee', sans-serif;
+    color: #ffffff;
+    padding: 0px 10px; 
+}
+
+.info-area .info{
+    margin: 40px 0px 0px;
+    padding: 40px 0px;
+    max-width: 1519.20px;
+    height: 1163.84px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.info-area .info .our-contacts .head h2{
+    font-size: 48px;
+    margin: 0px 0px 24px;
+    font-family: 'Merienda', cursive;
+    font-weight: 600;
+    color: #4b4342;
+}
+
+.info-area .info .our-contacts .text p{
+    font-size: 17px;
+    color: #4b4342;
+    text-align: center;
+    font-family: 'ABeeZee', sans-serif;
+    margin: 0px;
+    max-width: 970px;
+    height: 58px;
+}
+
+
+.info-area .info .asides-area .opening-hours{
+    width: 300px;
+    height: 324.18px;
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-area .info .asides-area .opening-hours h4, .send-message h4, .contacts-info h4{
+    width: 270px;
+    height: 33.45px;
+    color: #4b4342;
+    font-size: 27.88px;
+    margin: 0px 0px 16.728px;
+    font-family: 'Merienda', cursive;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    word-spacing: 1.5;
+}
+
+.info-area .info .asides-area .opening-hours p, .contacts-info p{
+    width: 270px;
+    height: 29px;
+    color: #4b4342;
+    font-size: 17px;
+    font-family: 'ABeeZee', sans-serif;
+    margin: 0px;
+    text-align: center;
+}
+
+
+.info-area .info .asides-area .send-message{
+    width: 600px;
+    height: 438.24px;
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+::placeholder{
+    color: #333333;
+}
+
+.info-area .info .asides-area .send-message input {
+    width: 570px;
+    height: 42px;
+    padding: 0px 10px;
+}
+
+.info-area .info .asides-area .contacts-info{
+    width: 300px;
+    height: 324.18px;
+    padding: 0px 15px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+footer .footer-widgets{
+    width: 1519.2px;
+    height: 460px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    --mask:
+    radial-gradient(20.18px at 50% 28.50px,#000 99%,#0000 101%) calc(50% - 30px) 0/60px 100%,
+    radial-gradient(20.18px at 50% -13.5px,#0000 99%,#000 101%) 50% 15px/60px 100% repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+          margin-top: -62px;
+}
+
+footer .footer-widgets::before {    
+    content: ' ';
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  opacity: .75;
+  background-image: url(https://bellaria.cwsthemes.com/wp-content/uploads/2017/12/153694902.jpg);
+  background-size: cover;
+  background-position: center;
+  }
+
+
+
+footer .footer-widgets .footer-asides-area a svg{
+    width: 60px;
+    height: 60px;
+    fill: #ffffff !important;
+    position: relative;   
+}
+
+footer .footer-widgets .footer-asides-area a i{
+    position: absolute;
+}
+
+footer .footer-widgets .footer-asides-area  h5{
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Merienda', cursive;
+    color: #ffffff;
+}
+
+footer .footer-widgets .footer-asides-area a i::before{
+position: absolute;
+color: #4b4342;
+top: 20px;
+right: 28px;
+}
+
+.footer-input .btn{
+    outline: 1px solid white;
+    width: 60px;
+    height: 42px;
+    /* fill: #fff; */
+    background-color: transparent;
+    background-color: #ffffff;
+    opacity: 0.85;
+    padding: 0px !important;
+}
+
+.footer-asides-area .footer-news{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo{
+    display: flex;
+    justify-content: center;
+}
